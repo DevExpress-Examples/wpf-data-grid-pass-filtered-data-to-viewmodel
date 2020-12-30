@@ -1,5 +1,5 @@
 ﻿Imports Microsoft.VisualBasic
-Imports DevExpress.Xpf.Mvvm
+Imports DevExpress.Mvvm
 Imports ExpressionEvaluator_Filter.Model
 Imports System.Collections.ObjectModel
 
