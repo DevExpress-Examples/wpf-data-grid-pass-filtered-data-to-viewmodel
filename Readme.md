@@ -1,9 +1,9 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [DataModel.cs](<./CS/ExpressionEvaluator Filter/Model/DataModel.cs>) (VB: [DataModel.vb](<./VB/ExpressionEvaluator Filter/Model/DataModel.vb>))
-* [DataView.xaml](<./CS/ExpressionEvaluator Filter/View/DataView.xaml>) (VB: [DataView.xaml](<./VB/ExpressionEvaluator Filter/View/DataView.xaml>))
-* [DataViewModel.cs](<./CS/ExpressionEvaluator Filter/ViewModel/DataViewModel.cs>) (VB: [DataViewModel.vb](<./VB/ExpressionEvaluator Filter/ViewModel/DataViewModel.vb>))
+* [DataModel.cs](./CS/ExpressionEvaluator%20Filter/Model/DataModel.cs) (VB: [DataModel.vb](./VB/ExpressionEvaluator%20Filter/Model/DataModel.vb))
+* [DataView.xaml](./CS/ExpressionEvaluator%20Filter/View/DataView.xaml) (VB: [DataView.xaml](./VB/ExpressionEvaluator%20Filter/View/DataView.xaml))
+* [DataViewModel.cs](./CS/ExpressionEvaluator%20Filter/ViewModel/DataViewModel.cs) (VB: [DataViewModel.vb](./VB/ExpressionEvaluator%20Filter/ViewModel/DataViewModel.vb))
 <!-- default file list end -->
 # How to obtain filtered data from GridControl in the MVVM style
 
