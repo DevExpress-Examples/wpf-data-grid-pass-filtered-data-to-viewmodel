@@ -5,7 +5,7 @@
     xmlns:v="clr-namespace:ExpressionEvaluator_Filter.View"
     xmlns:vm="clr-namespace:ExpressionEvaluator_Filter.ViewModel"
     Title="DXApplication" Height="400" Width="700"
-    SnapsToDevicePixels="True" UseLayoutRounding="True">
+    UseLayoutRounding="True">
     <Grid>
         <v:DataView />
     </Grid>

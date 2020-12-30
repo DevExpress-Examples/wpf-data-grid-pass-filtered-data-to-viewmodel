@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
              xmlns:local="clr-namespace:ExpressionEvaluator_Filter"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
@@ -18,7 +19,10 @@
         </Grid.ColumnDefinitions>
         <TextBlock Text="Source data" HorizontalAlignment="Center" />
         <TextBlock Text="Visible data" HorizontalAlignment="Center" Grid.Column="1"/>
-        <dxg:GridControl AutoPopulateColumns="True" ItemsSource="{Binding Data}" Grid.Row="1" local:FilteredDataSupport.VisibleData="{Binding VisibleData, Mode=TwoWay}">
+        <dxg:GridControl AutoGenerateColumns="AddNew" ItemsSource="{Binding Data}" Grid.Row="1">
+            <dxmvvm:Interaction.Behaviors>
+                <dxmvvm:ReadOnlyDependencyPropertyBindingBehavior Property="VisibleItems" Binding="{Binding VisibleData, Mode=OneWayToSource}"/>
+            </dxmvvm:Interaction.Behaviors>
             <dxg:GridControl.View>
                 <dxg:TableView ShowAutoFilterRow="True" />
             </dxg:GridControl.View>

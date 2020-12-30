@@ -1,44 +1,28 @@
-﻿using DevExpress.Xpf.Mvvm;
+﻿using DevExpress.Mvvm;
 using ExpressionEvaluator_Filter.Model;
 using System.Collections.ObjectModel;
 
 namespace ExpressionEvaluator_Filter.ViewModel {
-    class DataViewModel : ObservableObject {
+    class DataViewModel : ViewModelBase {
         public DataViewModel(int length) {
             CreateData(length);
         }
 
         private void CreateData(int length) {
             Data = new ObservableCollection<DataModel>();
-            VisibleData = new ObservableCollection<DataModel>();
             for(int i = 0; i < length; i++) {
                 Data.Add(new DataModel { Text = "Row" + i, Number = i });
             }
-            foreach(DataModel item in Data)
-                VisibleData.Add(new DataModel { Text = item.Text, Number = item.Number });
         }
-
-        private ObservableCollection<DataModel> _Data;
-        private ObservableCollection<DataModel> _VisibleData;
 
         public ObservableCollection<DataModel> Data {
-            get {
-                return _Data;
-            }
-            set {
-                _Data = value;
-                OnPropertyChanged("Data");
-            }
+            get { return GetProperty(() => Data); }
+            set { SetProperty(() => Data, value); }
         }
 
-        public ObservableCollection<DataModel> VisibleData {
-            get {
-                return _VisibleData;
-            }
-            set {
-                _VisibleData = value;
-                OnPropertyChanged("FilteredData");
-            }
+        public ObservableCollection<object> VisibleData {
+            get { return GetProperty(() => VisibleData); }
+            set { SetProperty(() => VisibleData, value); }
         }
     }
 }
