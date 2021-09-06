@@ -1,5 +1,5 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionEvaluator Filter", "ExpressionEvaluator Filter\ExpressionEvaluator Filter.csproj", "{BFC6B4F9-7443-42F0-8BF2-A16806ECFC40}"
 EndProject
 Global
