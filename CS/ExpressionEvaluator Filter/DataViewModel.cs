@@ -1,11 +1,10 @@
 ﻿using DevExpress.Mvvm;
-using ExpressionEvaluator_Filter.Model;
 using System.Collections.ObjectModel;
 
-namespace ExpressionEvaluator_Filter.ViewModel {
+namespace ExpressionEvaluator_Filter {
     class DataViewModel : ViewModelBase {
-        public DataViewModel(int length) {
-            CreateData(length);
+        public DataViewModel() {
+            CreateData(10);
         }
 
         private void CreateData(int length) {
