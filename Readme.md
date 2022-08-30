@@ -3,18 +3,27 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E4173)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [DataModel.cs](./CS/ExpressionEvaluator%20Filter/Model/DataModel.cs) (VB: [DataModel.vb](./VB/ExpressionEvaluator%20Filter/Model/DataModel.vb))
-* [DataView.xaml](./CS/ExpressionEvaluator%20Filter/View/DataView.xaml) (VB: [DataView.xaml](./VB/ExpressionEvaluator%20Filter/View/DataView.xaml))
-* [DataViewModel.cs](./CS/ExpressionEvaluator%20Filter/ViewModel/DataViewModel.cs) (VB: [DataViewModel.vb](./VB/ExpressionEvaluator%20Filter/ViewModel/DataViewModel.vb))
-<!-- default file list end -->
-# How to obtain filtered data from GridControl in the MVVM style
+# WPF Data Grid - Pass Filtered Data to the ViewModel
 
+This example demonstrates how to specify a ViewModel collection of the [GridControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl)'s visible items. 
 
-<p>This example shows how to return a collection of visible rows to ViewModel. For more details, refer to the following KB article: <a href="https://www.devexpress.com/Support/Center/p/KA18591">KA18591: How to synchronize filtered data between the GridControl and ViewModel</a>.</p>
+![image](https://user-images.githubusercontent.com/65009440/187371778-157a1e67-c26e-444f-ac3a-ab8664cf054a.png)
 
-<br/>
+## Files to Look At
 
+* [DataViewModel.cs](./CS/ExpressionEvaluator%20Filter/DataViewModel.cs) (VB: [DataViewModel.vb](./VB/ExpressionEvaluator%20Filter/DataViewModel.vb))
+* [MainWindow.xaml](./CS/ExpressionEvaluator%20Filter/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/ExpressionEvaluator%20Filter/MainWindow.xaml))
 
+## Documentation
+
+* [Synchronize Filtered Data Between the GridControl and ViewModel](https://supportcenter.devexpress.com/ticket/details/ka18591/how-to-synchronize-filtered-data-between-the-gridcontrol-and-viewmodel)
+* [DataControlBase.VisibleItems](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.DataControlBase.VisibleItems)
+* [ReadOnlyDependencyPropertyBindingBehavior](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.ReadOnlyDependencyPropertyBindingBehavior)
+* [Filtering and Searching](https://docs.devexpress.com/WPF/7356/controls-and-libraries/data-grid/filtering-and-searching)
+
+## More Examples
+
+* [WPF Data Grid - Specify Row Visibility in the ViewModel](https://github.com/DevExpress-Examples/how-to-specify-row-visibility-in-the-viewmodel-e4174)
+* [Bind the ChartControl to the GridControl's VisibleItems Collection](https://github.com/DevExpress-Examples/how-to-bind-the-chartcontrol-to-the-gridcontrol-visibleitems-collection)
+* [WPF Data Grid - Bind Selected Rows to a ViewModel Property](https://github.com/DevExpress-Examples/wpf-data-grid-bind-selected-rows-to-viewmodel-property)
