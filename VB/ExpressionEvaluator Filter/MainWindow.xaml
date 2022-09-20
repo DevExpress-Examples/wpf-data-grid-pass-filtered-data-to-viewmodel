@@ -1,12 +1,38 @@
 <Window
-    x:Class="ExpressionEvaluator_Filter.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:v="clr-namespace:ExpressionEvaluator_Filter.View"
-    xmlns:vm="clr-namespace:ExpressionEvaluator_Filter.ViewModel"
+    xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" 
+    xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+    xmlns:local="clr-namespace:ExpressionEvaluator_Filter"
+    x:Class="ExpressionEvaluator_Filter.MainWindow"
     Title="DXApplication" Height="400" Width="700"
-    SnapsToDevicePixels="True" UseLayoutRounding="True">
+    UseLayoutRounding="True">
+    <Window.DataContext>
+        <local:DataViewModel/>
+    </Window.DataContext>
     <Grid>
-        <v:DataView />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Source data" HorizontalAlignment="Center"/>
+        <TextBlock Text="Visible data" HorizontalAlignment="Center" Grid.Column="1"/>
+        <dxg:GridControl AutoGenerateColumns="AddNew" ItemsSource="{Binding Data}" Grid.Row="1">
+            <dxmvvm:Interaction.Behaviors>
+                <dxmvvm:ReadOnlyDependencyPropertyBindingBehavior Property="VisibleItems" Binding="{Binding VisibleData, Mode=OneWayToSource}"/>
+            </dxmvvm:Interaction.Behaviors>
+            <dxg:GridControl.View>
+                <dxg:TableView ShowAutoFilterRow="True" />
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+        <dxg:GridControl AutoPopulateColumns="True" ItemsSource="{Binding VisibleData}" Grid.Row="1" Grid.Column="1">
+            <dxg:GridControl.View>
+                <dxg:TableView />
+            </dxg:GridControl.View>
+        </dxg:GridControl>
     </Grid>
 </Window>
