@@ -12,8 +12,8 @@ This example demonstrates how to specify a ViewModel collection of the [GridCont
 
 ## Files to Look At
 
-* [DataViewModel.cs](./CS/ExpressionEvaluator%20Filter/DataViewModel.cs) <!--(VB: [DataViewModel.vb](./VB/ExpressionEvaluator%20Filter/DataViewModel.vb))->
-* [MainWindow.xaml](./CS/ExpressionEvaluator%20Filter/MainWindow.xaml) <!--(VB: [MainWindow.xaml](./VB/ExpressionEvaluator%20Filter/MainWindow.xaml))-->
+* [DataViewModel.cs](./CS/ExpressionEvaluator%20Filter/DataViewModel.cs) (VB: [DataViewModel.vb](./VB/ExpressionEvaluator%20Filter/DataViewModel.vb))
+* [MainWindow.xaml](./CS/ExpressionEvaluator%20Filter/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/ExpressionEvaluator%20Filter/MainWindow.xaml))
 
 ## Documentation
 
