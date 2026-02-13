@@ -29,7 +29,7 @@ This example demonstrates how to specify a ViewModel collection of the [GridCont
 * [Bind the ChartControl to the GridControl's VisibleItems Collection](https://github.com/DevExpress-Examples/how-to-bind-the-chartcontrol-to-the-gridcontrol-visibleitems-collection)
 * [WPF Data Grid - Bind Selected Rows to a ViewModel Property](https://github.com/DevExpress-Examples/wpf-data-grid-bind-selected-rows-to-viewmodel-property)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-pass-filtered-data-to-viewmodel&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-pass-filtered-data-to-viewmodel&~~~was_helpful=no)
 
